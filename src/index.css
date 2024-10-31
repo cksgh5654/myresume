@@ -3,11 +3,49 @@ body {
   padding: 0;
 }
 
-.app-header {
+header {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(16px);
+}
+
+.app-header {
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0px;
   left: 0px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 64px;
+}
+
+.header-menu > button {
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.7);
+  transition: color 0.5s;
+  font-size: 20px;
+  margin: 16px 0px;
+}
+
+.header-menu > button:hover {
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.icon-container {
+  display: flex;
+  gap: 16px;
+}
+
+.icon-path {
+  transition: stroke 0.5s;
 }
